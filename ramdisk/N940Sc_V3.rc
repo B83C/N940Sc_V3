@@ -1,0 +1,15 @@
+on property:sys.boot_completed=1
+    chown root:system /persist/d3ds_params.txt
+    chmod 0777 /persist/d3ds_params.txt
+
+#preset .gles.cfg file for pptv
+#service movefile /system/bin/sh /system/bin/n940sc_pptv.sh
+#    class core
+#    user root system media
+#    disbaled
+#    oneshot
+
+#on property:sys.boot_completed=1
+#    start movefile
+##end
+
