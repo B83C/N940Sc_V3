@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd kernel
+#cd kernel
 echo "Entering ./kernel..."
 
 NUBIA_TARGET_PRODUCT=N940Sc_V3
@@ -66,7 +66,7 @@ fi
 
 ${DTBTOOL} -v -o ${BOOT_PATH}/dt.img -s 2048 -p scripts/dtc/ ${BOOT_PATH}/dts/
 
-cd ..
+#cd ..
 echo "Exiting ./kernel..."
 
 read -p "Do you wish to build a boot.img?(Y/n): " yn
